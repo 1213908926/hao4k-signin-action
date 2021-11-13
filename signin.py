@@ -36,7 +36,7 @@ def run(form_data):
             login_url = login_url.replace("amp;", "")
             print(login_url)
     form_text = re.search('formhash=(.*?)\'', user_resp.text)
-    print(form_text.group(1))
+    #print(form_text.group(1))
     form_data['formhash'] = form_text.group(1)
     print(form_data)
 
